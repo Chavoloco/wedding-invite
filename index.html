@@ -2,660 +2,481 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="theme-color" content="#BC8887" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Jeremias y Luna</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
+    <title>Casamiento Jeremias y Luna</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Poppins:wght@100;300;400;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <meta property="og:title" content="Undangan Pernikahan Nama CPW & Nama CPW - Hari, 21 April 2021">
+    <meta property="og:description" content="Undangan Pernikahan Nama CPW & Nama CPW - Sabtu, 21 April 2021 di [Nama Tempat], [Nama Kota]">
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:image" content="https://simple-wedding-invitation.dae.ng/image/sherly-daeng-wedding-thumbnail.png">
+    <meta property="og:url" content="http://simple-wedding-invitation.dae.ng/index.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Bulma Version 0.8.x-->
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/bulma-tooltip@0.1.5/dist/bulma-tooltip.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/menikah.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.countdown.css" />
+    <script
+      src="https://kit.fontawesome.com/2828f7885a.js"
+      integrity="sha384-WAsFbnLEQcpCk8lM1UTWesAf5rGTCvb2Y+8LvyjAAcxK1c3s5c0L+SYOgxvc6PWG"
+      crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/jquery.coundown.js"></script>
+    <link rel="icon" type="image/png" href="image/favicon.png" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23064379-20"></script>
+    <!-- Begin Script for Countdown -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-    <!-- simplyCountdown -->
-    <link
-      rel="stylesheet"
-      href="./simplyCountdown/simplyCountdown.theme.default.css"
-    />
-    <script src="./simplyCountdown/simplyCountdown.min.js"></script>
+      gtag('config', 'UA-23064379-20');
+    </script>
+    <!-- Begin Script for Countdown -->
 
-    <!-- Bootstrap Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
-    />
-
-    <link rel="stylesheet" href="styles.css" />
+    <!-- Github Button -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
   </head>
-  <body class=>
-    <!-- Hero Section -->
-    <section
-      id="hero"
-      class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center"
-    >
-      <main>
-        
-        <h1>Jeremias & Luna</h1>
-        <div class="simply-countdown mt-3"></div>
 
-        <div class="event-info rounded-pill d-flex justify-content-around align-items-center mx-auto mt-5 px-4 py-3 shadow-sm">
-      <div class="text-center pe-3 border-end">
-        <div>Sabado 11</div>
-        <div>Abril 2026</div>
-      </div>
-      <div class="text-center ps-3">
-        <div>Cno a Estancia Caceres Comechingones, 94
-          <div>
-            Villa Carlos Paz, Córdoba
-          </div>
-        </div>
+  <body>
+    <!-- Begin Preloader -->
+    <div class="preloader-wrapper">
+      <div class="preloader">
+        <img src="image/favicon.png" alt="Flower" />
       </div>
     </div>
-
-        <a
-          href="#home"
-          class="btn btn-lg rounded-5 mt-5"
-          onclick="enableScroll()"
-          >Mirar invitacion</a
-        >
-
-      </main>
-    </section>
-
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-md bg-transparent sticky-top mynav">
-      <div class="container">
-        <a class="navbar-brand nav-logo" href="#">J <span>&</span> L</a>
-        <button
-          class="navbar-toggler border-0"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasNavbar"
-          aria-controls="offcanvasNavbar"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="offcanvas offcanvas-end"
-          tabindex="-1"
-          id="offcanvasNavbar"
-          aria-labelledby="offcanvasNavbarLabel"
-        >
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title nav-logo" id="offcanvasNavbarLabel">
-              S <span>&</span> G
-            </h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="offcanvas-body">
-            <div class="navbar-nav ms-auto">
-              <a class="nav-link" href="#home">Home</a>
-              <a class="nav-link" href="#info">Info</a>
-              <a class="nav-link" href="#story">Story</a>
-              <a class="nav-link" href="#gallery">Gallery</a>
-              <a class="nav-link" href="#rsvp">RSVP</a>
+    <!-- End Preloader-->
+    <!-- Begin Header -->
+    <div class="header-wrapper" id="home">
+      <!-- Begin Hero -->
+      <section class="hero is-large">
+        <!-- Begin Mobile Nav -->
+        <nav class="navbar is-transparent is-hidden-desktop">
+          <!-- Begin Burger Menu -->
+          <div class="navbar-brand is-fixed-top">
+            <div class="navbar-burger burger" data-target="mobile-nav">
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
           </div>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Home Section -->
-    <section id="home" class="home">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-8 col-10 text-center">
-            <h2>Ceremonia</h2>
-            <h3>El 11 Abril de 2026 Cabalango, Cordoba.</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo nam
-              optio voluptatibus impedit quidem sequi non nihil vitae enim culpa
-              consectetur voluptatum voluptates porro in modi, incidunt, eos
-              sint neque!
-            </p>
-          </div>
-        </div>
-
-        <div class="row couple">
-          <div class="col-lg-4">
-            <div class="row text-center justify-content-center">
-              <picture>
-                <source srcset="./img/Groom.webp" type="image/webp" />
-                <source srcset="./img/Groom.jpg" type="image/jpeg" />
-                <img
-                  src="./img/Groom.jpg"
-                  alt="Jeremias"
-                  class="img-responsive rounded-circle"
-                />
-              </picture>
-              <div class="col-md-8 col-10 text-center">
-                <h3 class="mt-3">Jeremias</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Dignissimos porro quae, harum
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 align-self-center and">
-            <div class="row text-center">
-              <h2>&</h2>
-            </div>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="row text-center justify-content-center">
-              <picture>
-                <source srcset="./img/Bride.webp" type="image/webp" />
-                <source srcset="./img/Bride.jpg" type="image/jpeg" />
-                <img
-                  src="./img/Bride.jpg"
-                  alt="Luna"
-                  class="img-responsive rounded-circle"
-                />
-              </picture>
-              <div class="col-md-8 col-10 text-center">
-                <h3 class="mt-3">Luna</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Dignissimos porro quae, harum
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Info Section -->
-    <section id="info" class="info">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-8 col-10 text-center">
-            <h2>Ubicacion</h2>
-            <p class="alamat">
-              Cno a Estancia Caceres Comechingones, 94,<br /> Villa Carlos Paz, Córdoba 
-            </p>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.62114682188!2d-64.59276532366452!3d-31.424562574257923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d69b032d83063%3A0x84f11aa1a57f6d4d!2sSauron%20Adventure%20%26%20Homes!5e0!3m2!1ses!2sar!4v1748311387581!5m2!1ses!2sar"
-              width="100%"
-              height="300"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-            <a
-              href="https://www.google.com.ar/maps/place/Sauron+Adventure+%26+Homes/@-31.4245626,-64.5927653,17z/data=!4m14!1m7!3m6!1s0x942d69b032d83063:0x84f11aa1a57f6d4d!2sSauron+Adventure+%26+Homes!8m2!3d-31.4245626!4d-64.5901904!16s%2Fg%2F11h8bc979v!3m5!1s0x942d69b032d83063:0x84f11aa1a57f6d4d!8m2!3d-31.4245626!4d-64.5901904!16s%2Fg%2F11h8bc979v?hl=es&entry=ttu&g_ep=EgoyMDI1MDUyMS4wIKXMDSoASAFQAw%3D%3D"
-              target="_blank"
-              class="btn btn-light btn-sm my-3"
-              >Ver Ubicacion</a
-            >
-            <p class="description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Molestiae, eaque minus reprehenderit et corporis magni ullam
-              quibusdam possimus accusamus
-            </p>
-          </div>
-        </div>
-
-        <div class="row justify-content-center mt-4">
-          <div class="col-md-5 col-10">
-            <div class="card text-center text-bg-light mb-5">
-              <div class="card-header">The Ceremony</div>
-              <div class="card-body">
-                <div class="row justify-content-center">
-                  <div class="col-md-6 mt-3 mb-3">
-                    <i class="bi bi-clock d-block"></i>
-                    <span>08.00 - 10.00</span>
-                  </div>
-                  <div class="col-md-6 mt-3 mb-3">
-                    <i class="bi bi-calendar2-week d-block"></i>
-                    <span>Monday, 25 November 2025</span>
-                  </div>
-                </div>
-              </div>
-              <div class="card-footer">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </div>
-            </div>
-          </div>
-          <div class="col-md-5 col-10">
-            <div class="card text-center text-bg-light">
-              <div class="card-header">The Afterparty</div>
-              <div class="card-body">
-                <div class="row justify-content-center">
-                  <div class="col-md-6 mt-3 mb-3">
-                    <i class="bi bi-clock d-block"></i>
-                    <span>11.00 - End</span>
-                  </div>
-                  <div class="col-md-6 mt-3 mb-3">
-                    <i class="bi bi-calendar2-week d-block"></i>
-                    <span>Monday, 25 November 2025</span>
-                  </div>
-                </div>
-              </div>
-              <div class="card-footer">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Story Section -->
-    <section id="story" class="story">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-8 col-10 text-center">
-            <span>How our love story began</span>
-            <h2>How We Met</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed fugit
-              voluptates dicta accusantium illo amet.
-            </p>
-          </div>
-        </div>
-        <div class="main-timeline-2">
-          <div class="timeline-2 left-2">
-            <div class="card">
-              <img
-                src="https://picsum.photos/1000/400.webp?random=1"
-                class="card-img-top"
-                alt="Responsive image"
-              />
-              <div class="card-body p-4">
-                <h4 class="mb-4">Ut enim ad minim veniam</h4>
-                <p class="text-muted mb-4">
-                  <i class="far fa-clock" aria-hidden="true"></i> 2017
-                </p>
-                <p class="mb-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="timeline-2 right-2">
-            <div class="card">
-              <img
-                src="https://picsum.photos/1000/400.webp?random=2"
-                class="card-img-top"
-                alt="Responsive image"
-              />
-              <div class="card-body p-4">
-                <h4 class="mb-4">Duis aute irure dolor</h4>
-                <p class="text-muted mb-4">
-                  <i class="far fa-clock" aria-hidden="true"></i> 2016
-                </p>
-                <p class="mb-0">
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                  accusantium doloremque laudantium, totam rem aperiam, eaque
-                  ipsa quae ab illo inventore veritatis et quasi architecto
-                  beatae vitae dicta sunt explicabo.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="timeline-2 left-2">
-            <div class="card">
-              <img
-                src="https://picsum.photos/1000/400.webp?random=3"
-                class="card-img-top"
-                alt="Responsive image"
-              />
-              <div class="card-body p-4">
-                <h4 class="mb-4">Sed ut nihil unde omnis</h4>
-                <p class="text-muted mb-4">
-                  <i class="far fa-clock" aria-hidden="true"></i> 2015
-                </p>
-                <p class="mb-0">
-                  Neque porro quisquam est, qui dolorem ipsum quia dolor sit
-                  amet, consectetur, adipisci velit, sed quia non numquam eius
-                  modi tempora incidunt ut labore et dolore magnam aliquam
-                  quaerat voluptatem.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Gallery Section -->
-    <section id="gallery" class="gallery">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-8-md col-10 text-center">
-            <span>Our Memories</span>
-            <h2>Gallery Photo</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed fugit
-              voluptates dicta accusantium illo amet.
-            </p>
-          </div>
-        </div>
-
-        <div class="row row-cols-1 gallery-container">
-          <div class="col-lg-6 pb-4">
-            <a
-              href="./img/Groom&Bride-06.webp"
-              data-toggle="lightbox"
-              data-gallery="ourgallery"
-              data-caption="Scott & Greta Pre-Wedding Moment"
-            >
-              <div class="groomphoto1"></div>
-            </a>
-          </div>
-
-          <div class="col-lg-6">
-            <div class="row">
-              <div class="col-lg-12 pb-4">
-                <a
-                  href="./img/Groom&Bride-03.webp"
-                  data-toggle="lightbox"
-                  data-gallery="ourgallery"
-                  data-caption="Scott & Greta Pre-Wedding Moment"
-                  ><div class="groomphoto2"></div
-                ></a>
-              </div>
-
-              <div class="col-lg-6 pb-4">
-                <a
-                  href="./img/Groom&Bride-07.webp"
-                  data-toggle="lightbox"
-                  data-gallery="ourgallery"
-                  data-caption="Scott & Greta Pre-Wedding Moment"
-                >
-                  <div class="groomphoto3"></div>
+          <!-- End Burger Menu -->
+          <div id="mobile-nav" class="navbar-menu">
+            <div class="navbar-end">
+              <div class="navbar-item">
+                <a class="navbar-item" href="#Waktu">
+                  Waktu
                 </a>
               </div>
-
-              <div class="col-lg-6 pb-4">
-                <a
-                  href="./img/Groom&Bride-01.webp"
-                  data-toggle="lightbox"
-                  data-gallery="ourgallery"
-                  data-caption="Scott & Greta Pre-Wedding Moment"
-                >
-                  <div class="groomphoto4"></div>
+              <div class="navbar-item">
+                <a class="navbar-item" href="#lokasi">
+                  Lokasi
+                </a>
+              </div>
+              
+              <div class="navbar-item">
+                <a class="navbar-item" href="#tentang-pasangan">
+                  Tentang CPW dan CPP
+                </a>
+              </div>
+              <div class="navbar-item">
+                <a class="navbar-item" href="#rsvp">
+                  RSVP
                 </a>
               </div>
             </div>
           </div>
-
-          <div class="col-lg-6 pb-4">
-            <div class="row">
-              <div class="col-lg-6 pb-4">
-                <a
-                  href="./img/Groom&Bride-05.webp"
-                  data-toggle="lightbox"
-                  data-gallery="ourgallery"
-                  data-caption="Scott & Greta Pre-Wedding Moment"
-                >
-                  <div class="groomphoto5"></div>
-                </a>
-              </div>
-
-              <div class="col-lg-6 pb-4">
-                <a
-                  href="./img/Groom&Bride-08.webp"
-                  data-toggle="lightbox"
-                  data-gallery="ourgallery"
-                  data-caption="Scott & Greta Pre-Wedding Moment"
-                >
-                  <div class="groomphoto6"></div>
-                </a>
-              </div>
-
-              <div class="col-lg-12">
-                <a
-                  href="./img/Groom&Bride-02.webp"
-                  data-toggle="lightbox"
-                  data-gallery="ourgallery"
-                  data-caption="Scott & Greta Pre-Wedding Moment"
-                >
-                  <div class="groomphoto7"></div>
-                </a>
-              </div>
-            </div>
+        </nav>
+        <!-- End Mobile Nav -->
+        <!-- Begin Hero Content-->
+        <div class="hero-body">
+          <div class="container has-text-centered">
+            <h1 class="subtitle">Jere + Luna</h1>
+            <h2 class="title">Nuestro casamiento</h2>
+            <h4 class="subtitle tempatwaktu">
+              
+                Nos gustaria que nos acompañes 
+                </br>
+                en este día tan especial para nosotros
+                </br>
+                <br><br>
+                <b>Sabado 11 de Abril del 2026</b>
+                <br>
+              
+            </h4>
           </div>
-
-          <div class="col-lg-6 pb-4">
-            <a
-              href="./img/Groom&Bride-04.webp"
-              data-toggle="lightbox"
-              data-gallery="ourgallery"
-              data-caption="Scott & Greta Pre-Wedding Moment"
-            >
-              <div class="groomphoto8"></div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--<section id="rsvp" class="rsvp">
-      <div class="container">
-        <div class="row justify-content-center mb-3">
-          <div class="col-8-md col-10 text-center">
-            <h2>Confirma tu asistencia</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed fugit
-              voluptates dicta accusantium illo amet.
-            </p>
-          </div>
-        </div>
-
-        <form
-          class="row row-cols-md-auto g-3 align-items-center justify-content-center"
-          id="confirmation-form"
-          method="POST"
-          action="https://script.google.com/macros/s/AKfycbz3gHfPjIweCcfnD_OxTJZST9DZuk7uaMHdC2A25XpSTDjyfyBtPs045xWNcwNFb9bu/exec"
-        >
-          <div class="col-12">
-            <div class="mb-3">
-              <label for="name" class="form-label">Name</label>
-              <input type="text" class="form-control" id="name" name="name" />
-            </div>
-            <div class="mb-3">
-              <label for="attend" class="form-label"
-                >Number of families attending</label
-              >
-              <input
-                type="number"
-                class="form-control"
-                id="attend"
-                name="attend"
-                min="1"
-                max="5"
-                length="1"
-                value="1"
-              />
-            </div>
-            <div class="mb-3">
-              <label for="status" class="form-label">Confirmation</label>
-              <select name="status" id="status" class="form-select">
-                <option selected>Choose one</option>
-                <option value="Attend">Attend</option>
-                <option value="Not Attend">Not Attend</option>
-              </select>
-            </div>
-            <div class="mt-5 mb-3 text-center">
-              <button class="btn btn-primary">Confirm</button>
-            </div>
-          </div>
-        </form>
-      </div>
-    </section>-->
-
-    <section id="rsvp" class="rsvp" >
-      <div class="row justify-content-center">
-        <div class="col-8-md col-10 text-center">
-          <h2>Confirmar asistencia</h2>
-        </div>      
-        <div class="container">            
-          <p></p>
-          <div class="whatsapp-buttons mt-5 mb-5">
-            <a href="https://wa.me/543541590105" target="_blank" class="whatsapp-button">
-              Contacto de Jere
-            </a>
-            <a href="https://wa.me/543541563927" target="_blank" class="whatsapp-button">
-              Contacto de Luna
-            </a>
-          </div>
-          <div class="mt-5 mb-3 text-center">
-            <p class="price">Valor de la tarjeta $110.000*</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <section id="wishes" class="wishes">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-8 col-10 text-center">
-            <h2>Your Wishes</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed fugit
-              voluptates dicta accusantium illo amet.
-            </p>
-          </div>
-        </div>
-
-        <div class="row justify-content-center mt-5">
-          <div class="col-md-8">
-            <div id="disqus_thread"></div>
-            <script>
-              var disqus_config = function () {
-                this.page.url = "https://moonlit-babka-69397d.netlify.app";
-                this.page.identifier = "12345";
-              };
-
-              (function () {
-                // DON'T EDIT BELOW THIS LINE
-                var d = document,
-                  s = d.createElement("script");
-                s.src = "https://s-g-wedding-invitation.disqus.com/embed.js";
-                s.setAttribute("data-timestamp", +new Date());
-                (d.head || d.body).appendChild(s);
-              })();
-            </script>
-            <noscript
-              >Please enable JavaScript to view the
-              <a href="https://disqus.com/?ref_noscript"
-                >comments powered by Disqus.</a
-              ></noscript
-            >
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col text-center">
-            <small class="block"
-              >&copy; 2023 S&G Wedding. All Rights Reserved.</small
-            >
-            <small class="block"
-              >Developed by :
-              <a href="https://www.instagram.com/mariochrstbg/"
-                >@mariochrstbg</a
-              ></small
-            >
-
-            <ul class="mt-3">
-              <li>
-                <a href=""><i class="bi bi-twitter"></i></a>
-              </li>
-              <li>
-                <a href=""><i class="bi bi-instagram"></i></a>
-              </li>
-              <li>
-                <a href=""><i class="bi bi-threads"></i></a>
-              </li>
-              <li>
-                <a href=""><i class="bi bi-tiktok"></i></a>
-              </li>
-              <li>
-                <a href=""><i class="bi bi-pinterest"></i></a>
-              </li>
+          <!-- Start Countdown -->       
+          <div>
+            <div class="container has-text-centered falta">
+              <h1>Faltan:</h1>
+            </div>            
+            <ul id="hitungmundur" >
+              <li><span class="days">00</span><p class="days_text">Días</p></li>
+              <li class="separator">:</li>
+              <li><span class="hours">00</span><p class="hours_text">Horas</p></li>
+              <li class="separator">:</li>
+              <li><span class="minutes">00</span><p class="minutes_text">Minutos</p></li>
+              <li class="separator">:</li>
+              <li><span class="seconds">00</span><p class="seconds_text">Segundos</p></li>
             </ul>
+            <div class="spasi">
+            </div>
+            <script type="text/javascript">
+              var now = new Date();
+              var day = now.getDate();
+              var month = now.getMonth() + 1;
+              var year = now.getFullYear() + 1;
+          
+              var nextyear = month + '/' + day + '/' + year + ' 07:07:07';
+              var harih = '04/11/2026 17:30:00';
+
+              $('#hitungmundur').countdown({
+                date: harih, // TODO Date format: 07/27/2017 17:00:00
+                offset: +7, // TODO Your Timezone Offset
+                day: 'Día',
+                days: 'Días'
+              }, function () {
+                alert('Done!');
+              });
+            </script>  
+          </div>
+          <!-- End Countdown -->
+        </div>
+        <!-- End Hero Content-->
+        <!-- Begin Hero Menu -->
+        <div class="hero-foot ">
+          <div class="hero-foot--wrapper">
+            <div class="columns">
+              <div class="column is-12 hero-menu-desktop has-text-centered">
+                <ul>
+                  <li class="is-active">
+                    <a href="#home">Home</a>
+                  </li>
+                  <li>
+                    <a href="#Waktu">Fecha</a>
+                  </li>
+                  <li>
+                    <a href="#lokasi">Ubicación</a>
+                  </li>
+                  <li>
+                    <a href="#tentang-pasangan">Tentang CPW & CPP</a>
+                  </li>
+
+                  <li>
+                    <a href="#rsvp">Confirmación</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Hero Menu -->
+      </section>
+      <!-- End Hero -->
+    </div>
+    <!-- End Header -->
+
+    <!-- Begin Main Content -->
+    <div class="main-content">
+    <!-- Begin regular-section-->
+     <section class="section-light no-padding-top regular-section has-text-centered has-vertically-aligned-content" id="regular-section">
+        
+        <div data-aos="fade-up" data-aos-easing="linear">
+          <img src="image/bismillah.png" class="bismillah has-text-centered" alt="Bismillahirrahmaanirrahiim">
+        </div>
+
+        <p class="bodytext" data-aos="fade-up" data-aos-easing="linear">
+          Assalamu'alaikum Warahmatullahi Wabarakatuh.
+          <br />
+          Dengan memohon rahmat dan ridha Allah swt, 
+          <br />
+          kami bermaksud mengundang Bapak/Ibu/Saudara/Saudari pada acara pernikahan kami
+        </p>
+
+        <span class="space40px"></span>
+        <span class="space40px"></span>
+
+        <div data-aos="fade-up" data-aos-easing="linear">
+          <div class="nama-lengkap" >
+            Nama Calon Mempelai Wanita
+          </div>
+          <div class="ampersand">&</div>
+          <div class="nama-lengkap">
+          Nama Calon Mempelai Pria
+          </div>
+           
+        </div>
+        <span class="space40px"></span>
+        <div data-aos="fade-up" data-aos-easing="linear">
+          <img src="image/divider-leaves.png" class="divider has-text-centered" alt="~~~">
+        </div>
+        <span class="space40px"></span>
+        <span class="space40px"></span>
+      </section>
+      <!-- End regular-section-->    
+      
+      <!-- Begin Waktu Section -->
+      <section class="section-dark" id="Waktu">
+        <div class="container">
+
+          <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
+            <h1 class="title has-text-centered section-title">Fecha</h1>
+          </div>
+          <div class="columns is-multiline" data-aos="fade-up" data-aos-easing="linear">
+            <div
+              class="column is-4 has-vertically-aligned-content">
+            
+              <p class="is-larger has-text-centered">
+                  <div class="waktu tanggal-hari has-text-centered">Sabádo</div> 
+                  <div class="waktu tanggal-angka has-text-centered">11</div>
+                  <div class="waktu tanggal-bulan has-text-centered">Abril 2026</div>
+              </p>
+            
+            </div>
+            <div class="column is-4 has-vertically-aligned-content">
+            
+              <p class="waktu is-larger has-text-centered">
+                Recepción:
+                <br>
+                <strong>16.30 HS</strong>
+              </p>
+            
+            </div>
+
+            <div class="column is-4 has-vertically-aligned-content">
+              
+              <h1 class="waktu is-larger has-text-centered">
+                Ceremonia civil:
+                <br>
+                <strong>17.30 - 18.30 HS</strong>
+              </h1>
+              
+              
+            </div>
+
+          </div>
+        </div>
+        <div class="space40px"></div>
+        <div class="main-content has-text-centered" data-aos="fade-up" data-aos-easing="linear">
+          <a href="https://calendar.app.google/fRWtvXN9T2fPGuT6A" target="_blank" class="button has-tooltip btn-cta" data-tooltip="Add to Calendar" target="_blank" data-aos="zoom-in">
+            <i class="far fa-calendar-plus"></i>
+            &nbsp;&nbsp;Google Calendar
+          </a>
+        </div>
+      </section>
+      <!-- End Waktu Content -->
+
+      <!-- Begin Lokasi Section -->
+      <section class="section-darker" id="lokasi" >
+        <div class="container">
+          <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
+            <h1 class="title has-text-centered section-title">Ubicación</h1>
+            <p class="tempat is-larger has-text-centered">
+              <strong>Sauron Adventure & Homes</strong>
+              <br>
+              Cno a Estancia Caceres Comechingones, 94,  
+              <br>
+              Villa Carlos Paz, Córdoba
+              <br>
+            </p>
+          </div>
+          <div class="section-map" data-aos="fade-up" data-aos-easing="linear">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.621313017614!2d-64.59276532353563!3d-31.424557996647874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d69b032d83063%3A0x84f11aa1a57f6d4d!2sSauron%20Adventure%20%26%20Homes!5e0!3m2!1ses!2sar!4v1749321864959!5m2!1ses!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="space40px"></div>
+          <div class="has-text-centered" data-aos="fade-up" data-aos-easing="linear">
+            <a href="https://maps.app.goo.gl/vaJsPTgtiJAZi2F1A" class="button btn-cta" target="_blank" data-aos="zoom-in">
+              <i class="far fa-directions"></i>
+              &nbsp;&nbsp;Google Maps
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- End Lokasi Content -->
+
+      <!-- Begin Tentang [Calon Mempelai Wanita] and [Calon Mempelai [Pria] -->
+      <section class="section-light regular-section is-fullheight" id="tentang-pasangan">
+        <div class="container">
+          <div class="columns is-multiline">  
+          <div class="column has-text-centered is-12 prolog">
+            <h1 class="title has-text-centered section-title" data-aos="fade-up" data-aos-easing="linear"> Tentang [Calon Mempelai Wanita] dan [Calon Mempelai [Pria]</h1>
+            
+
+          
+          <!-- IMAGES -->  
+        <div class=" tile">
+          <div class="tile is-ancestor">
+          <div class="tile is-parent">
+            <article class="tile is-child foto1 notification foto1" data-aos="fade-up" data-aos-easing="linear">
+              <div class="content">
+                <p class="title-foto">November 2018</p>
+                <p class="subtitle-foto">
+                  Pertama kali saling kenal di <a href="https://google.com" target="_blank">Sebut Nama Tempat</a>
+                </p>
+              </div>
+            </article>
+          </div>
+          <div class="tile is-parent">
+            <article class="tile is-child notification foto2" data-aos="fade-up" data-aos-easing="linear">
+              <div class="content">
+                <p class="title-foto">
+                  Desember 2018 - Februari 2019
+                </p>
+                <p class="subtitle-foto">
+                  Satu kantor, satu divisi, dan posisi tempat duduk saling membelakangi.
+                </p>   
+              </div>            
+            </article>
+          </div>
+          <div class="tile is-parent">
+            <article class="tile is-child notification foto3" data-aos="fade-up" data-aos-easing="linear">
+              <div class="content">  
+                <p class="title-foto">
+                  Maret 2019
+                </p>
+                <p class="subtitle-foto">
+                  Cerita cinta dimulai
+                </p>
+              </div>
+            </article>
           </div>
         </div>
       </div>
-    </footer>
+      <div class="space24px"></div>
+      <div class="tile is-ancestor">
+        <div class="tile is-parent">
+          <article class="tile is-child notification foto6" data-aos="fade-up" data-aos-easing="linear">
+            <div class="content">
+              <p class="title-foto">Juni 2019</p>
+              <p class="subtitle-foto">Pertemuan 2 keluarga</p>
+            </div>
+          </article>
+        </div>
+        <div class="tile is-parent">
+          <article class="tile is-child notification foto4" data-aos="fade-up" data-aos-easing="linear">
+            <div class="content">
+              <p class="title-foto">Desember 2019</p>
+              <p class="subtitle-foto">Lamaran</p>
+            </div>
+          </article>
+        </div>
+        <div class="tile is-parent">              
+          <article class="tile is-child notification foto5" data-aos="fade-up" data-aos-easing="linear">
+            <div class="content">
+              <p class="title-foto">Maret 2020</p>
+              <p class="subtitle-foto">Menikah</p>
+            </div>
+          </article>
+        </div>
+      </div>   
+          <!-- IMAGES -->
+          <div class="space40px"></div>
+            <div data-aos="fade-up" data-aos-easing="linear">
+              <img src="image/divider-leaves.png" class="divider has-vertically-align" alt="~~~">
+            </div> 
+            <div class="space40px"></div>
+            <div class="space40px"></div>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
+          </div>
+        </div>
+      </section>
+      <!-- End Tentang [Calon Mempelai Wanita] and [Calon Mempelai [Pria] -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+      <!-- Begin RSVP Content -->
+      <section class="section-dark contact" id="rsvp">
+        <div class="container">
+          <div class="columns is-multiline">          
+            <div class="column is-12 prolog">
+              <h1 class="title has-text-centered section-title" data-aos="fade-up" data-aos-easing="linear">Confirmación</h1>
+            </div>
+            <div class="column is-12 prolog has-text-centered" data-aos="fade-up" data-aos-easing="linear">
+              <p class="h2 subtitle">
+                Los mejores momentos de la vida son especiales por si solos, 
+                <br>
+                pero compartirlos con las personas que aprecias los convierte en momentos únicos e inolvidables.
+                <br>
+                <br>
+                Por eso queremos que seas parte de esta celebración  
+                <br>
+                Confirmar asistencia antes del {fecha} a nuestro whatsapps
+                <!--<br>
+                <br>
+                 Jika tidak memungkinkan untuk hadir di pernikahan kami,tidak mengapa,
+                <br> 
+                semoga bisa berjumpa di lain kesempatan -->
+                <br>
+                <br>
+                Valor de la tarjeta: $115000*
+                </p>
+     
+              <a href="https://api.whatsapp.com/send?phone=+543541563927&text=Hola%20Luna,me%20gustaría%20estar%20presente%20en%20su%20casamiento&source=&data=" class="button btn-whatsapp" target="_blank" data-aos="zoom-in">
+                <i class="fab fa-whatsapp"></i>
+                &nbsp;&nbsp; Whatsapp Luna
+              </a>
+              
 
+          
+              <a href="https://api.whatsapp.com/send?phone=+543541590105&text=Hola%20Chavo,me%20gustaría%20estar%20presente%20en%20su%20casamiento&source=&data=" class="button btn-whatsapp" target="_blank" data-aos="zoom-in">
+                <i class="fab fa-whatsapp"></i>
+                &nbsp;&nbsp; Whatsapp Jere
+              </a >
+              <div class="space40px"></div>
+
+              <div class="space40px"></div>
+              <div data-aos="fade-up" data-aos-easing="linear">
+                <img src="image/divider-leaves.png" class="divider has-text-centered" alt="~~~">
+              </div>
+              <div class="space40px"></div>
+              <p class="h2 subtitle" data-aos="fade-up" data-aos-easing="linear">
+                Seguinos en Instagram
+                <br>
+                <a class="instagram" href="https://www.instagram.com/jere.bertoldi" target="_blank" alt="Instagram Jeremias">
+                  <i class="fab fa-instagram"></i> @jere.bertoldi
+                </a>
+                &nbsp
+                <a class="instagram" href="https://www.instagram.com/lunitafarias98/" target="_blank" alt="Instagram Luna">
+                  <i class="fab fa-instagram"></i> @lunitafarias98
+                </a>
+              </p>
+
+            </div>
+ 
+         </div>
+        </div>
+      </section>
+      <!-- End RSVP Content -->
+    </div>
+    <!-- End Main Content -->
+
+    <!-- Begin Footer -->
+    <div class="footer">
+      <div class="container">
+        <a href="https://github.com/daengdoang/simple-wedding-invitation" class="has-vertically-align">
+          <p class="has-vertically-align">2020 &copy @daengdoang </p>
+        </a>
+        <a href="https://bulma.io" class="has-vertically-align">
+          <img src="https://bulma.io/images/made-with-bulma.png" alt="Made with Bulma">
+        </a>
+        <a href="https://www.netlify.com">
+          <img src="https://www.netlify.com/img/global/badges/netlify-color-bg.svg" alt="Deploy with Netlify"/>
+        </a>
+      </div>
+    </div>
+    <!-- End Footer -->
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/menikah.js"></script>
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
     <script>
-      simplyCountdown(".simply-countdown", {
-        year: 2026, // required
-        month: 4, // required
-        day: 11, // required
-        hours: 5, // Default is 0 [0-23] integer
-        words: {
-          //words displayed into the countdown
-          days: { singular: "day", plural: "days" },
-          hours: { singular: "hour", plural: "hours" },
-          minutes: { singular: "minute", plural: "minutes" },
-          seconds: { singular: "second", plural: "seconds" },
-        },
-        plural: true, //use plurals
+      AOS.init({
+        easing: "ease-out",
+        duration: 800,
       });
     </script>
-
-    <script>
-      const rootElement = document.querySelector(":root");
-
-      function disableScroll() {
-        scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
-
-        window.onscroll = function () {
-          window.scrollTo(scrollTop, scrollLeft);
-        };
-
-        rootElement.style.scrollBehavior = "auto";
-      }
-
-      function enableScroll() {
-        window.onscroll = function () {};
-        rootElement.style.scrollBehavior = "smooth";
-        localStorage.setItem("opened", "true");
-      }
-
-      if (!localStorage.getItem("opened")) {
-        disableScroll();
-      }
-    </script>
-
-    <script src="./js/modernizr-custom.js"></script>
-    <script src="./js/script.js"></script>
   </body>
 </html>
