@@ -367,7 +367,7 @@ vertical-align: middle;
   padding-top: 0px;
 }
 
-.footer img{
+.footer img {
   margin: 10px 0px 10px 10px;
   display: inline-block;
   max-height: 24px;
@@ -375,6 +375,10 @@ vertical-align: middle;
 }
 
 .footer a .nav-item {
+  color: whitesmoke;
+}
+
+.footer i .nav-item {
   color: whitesmoke;
 }
 
@@ -390,9 +394,9 @@ vertical-align: middle;
 }
 
 .bismillah {
-  margin: 25px;
+  margin: 15px;
   display: inline-block;
-  max-height: 50px;
+  max-height: 150px;
   vertical-align: middle;
 }
 
@@ -643,7 +647,7 @@ body.preloader-site {
 }
 
 .instagram {
-  color: #996E6D;
+  color: #f7f4f4;
   font-size: 1.25rem;
   font-weight: 900;
   margin-top: 0.5rem;
@@ -651,4 +655,10 @@ body.preloader-site {
   vertical-align: middle;
   text-align: center;
   padding: 10px;
+}
+
+.footer a:hover {
+  color: #644955;
+  font-size: 1.16rem;
+  font-weight: 810;
 }
