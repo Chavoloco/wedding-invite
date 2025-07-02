@@ -139,7 +139,6 @@ html {
 
 .main-content {
   background-color: #f9d8c8;
-  padding-top: 2rem;
   color: #000; 
   font-family: 'Raleway', sans-serif;
 }
@@ -677,4 +676,10 @@ body.preloader-site {
   color: #644955;
   font-size: 1.16rem;
   font-weight: 810;
+}
+
+b.aclaration {
+  color: #996E6D;
+  font-size: 0.5rem;
+  font-weight: bold;
 }
