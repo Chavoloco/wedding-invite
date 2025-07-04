@@ -221,7 +221,7 @@
       <section class="section-dark" id="Waktu">
         <div class="container">
 
-          <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
+          <div class="column is-12 regular-section" id="date" data-aos="fade-up" data-aos-easing="linear">
             <h1 class="title has-text-centered section-title">Fecha</h1>
           </div>
           <div class="columns is-multiline" data-aos="fade-up" data-aos-easing="linear">
@@ -231,28 +231,29 @@
               <p class="is-larger has-text-centered">
                   <div class="waktu tanggal-hari has-text-centered">Sabádo</div> 
                   <div class="waktu tanggal-angka has-text-centered">11</div>
-                  <div class="waktu tanggal-bulan has-text-centered">Abril 2026</div>
+                  <div class="waktu tanggal-bulan has-text-centered">Abril</div>
               </p>
             
             </div>
             <div class="column is-4 has-vertically-aligned-content">
             
-              <p class="waktu is-larger has-text-centered">
+              <p class="waktu is-larger has-text-centered" id="recepcion">
                 Recepción:
                 <br>
+              </p>
+              <p class="waktu is-larger has-text-centered">
                 <strong>17.00 HS</strong>
               </p>
             
             </div>
 
             <div class="column is-4 has-vertically-aligned-content">
-              
-              <h1 class="waktu is-larger has-text-centered">
-                Ceremonia civil:
-                <br>
-                <strong>17.30 - 18.30 HS</strong>
-              </h1>
-              
+              <p class="waktu is-larger has-text-centered" id="ceremonia">
+                Ceremonia Civil:
+              </p>
+              <p class="waktu is-larger has-text-centered">
+                <strong>17.30 HS</strong>
+              </p>
               
             </div>
 
@@ -276,7 +277,7 @@
             <p class="tempat is-larger has-text-centered">
               <strong>Sauron Adventure & Homes</strong>
               <br>
-              Cno a Estancia Caceres Comechingones, 94,  
+              Camino a Estancia Caceres Comechingones, 94,  
               <br>
               Villa Carlos Paz, Córdoba
               <br>
@@ -296,7 +297,7 @@
       </section>
       <!-- End Lokasi Content -->
 
-      <!-- Begin Tentang [Calon Mempelai Wanita] and [Calon Mempelai [Pria] -->
+      <!-- Begin Tentang [Calon Mempelai Wanita] and [Calon Mempelai [Pria] 
        <section class="section-light regular-section is-fullheight" id="tentang-pasangan" style="background-color: #F4E2E2">
         <div class="container" >
           <div class="columns is-multiline">  
@@ -372,16 +373,14 @@
       </div>   
           
           <div class="space40px"></div>
-            <!--<div data-aos="fade-up" data-aos-easing="linear">
+            <div data-aos="fade-up" data-aos-easing="linear">
               <img src="image/divider-leaves.png" class="divider has-vertically-align" alt="~~~">
-            </div> -->
-            <div class="space40px"></div>
-            <div class="space40px"></div>
+            </div> 
 
           </div>
         </div>
       </section> 
-      <!-- End Tentang [Calon Mempelai Wanita] and [Calon Mempelai [Pria] -->
+        End Tentang [Calon Mempelai Wanita] and [Calon Mempelai [Pria] -->
 
       <!-- Begin RSVP Content -->
       <section class="section-light contact" id="rsvp">
@@ -396,22 +395,26 @@
                 <br>
                 pero compartirlos con las personas que aprecias los convierte en momentos únicos e inolvidables.
                 <br>
+                Por eso queremos que seas parte de esta celebración.  
                 <br>
-                Por eso queremos que seas parte de esta celebración  
-                <br>
-                Confirmar asistencia antes del <b>31/03/2026</b> a nuestros whatsapps
+                
                 <!--<br>
                 <br>
                  Jika tidak memungkinkan untuk hadir di pernikahan kami,tidak mengapa,
                 <br> 
                 semoga bisa berjumpa di lain kesempatan -->
                 <br>
-                <br>
-                Valor de la tarjeta: <b>$115000*</b>
-                <br>
+                </p>
+                <p id="price1">
+                  Valor de la tarjeta:
+                  <br>
+                 <p id="price2">$115.000*</p>
                 <b class="aclaration">(*el precio de la tarjeta puede cambiar)</b>
                 </p>
-                <p ></p>
+                <br>
+                <p class="h2 subtitle">
+                  Confirmar asistencia antes del <b>31/03/2026</b> a nuestros whatsapps
+                </p>
                 
      
               <a href="https://api.whatsapp.com/send?phone=+543541563927&text=Hola%20Luna,me%20gustaría%20estar%20presente%20en%20su%20casamiento&source=&data=" class="button btn-whatsapp" target="_blank" data-aos="zoom-in">
@@ -423,7 +426,7 @@
                 &nbsp;&nbsp; <b>Whatsapp Jere</b>
               </a >
               <div class="space40px"></div>
-                <p class="h2 subtitle">
+                <p class="h2 subtitle" id="presentes">
                 Su presencia es el mejor regalo que pueden hacernos,
                 <br>
                 pero si desean hacernos un presente, pueden colaborar con nuestra luna de miel.
@@ -463,7 +466,6 @@
         <p class="h2 subtitle"  data-aos-easing="linear">
                 Seguinos en Instagram
                 <br>
-                <div class="space10px"></div>
                 <a class="instagram" href="https://www.instagram.com/jere.bertoldi" target="_blank" alt="Instagram Jeremias">
                   <i class="fab fa-instagram"></i> @jere.bertoldi
                 </a>

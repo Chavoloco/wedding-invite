@@ -314,7 +314,7 @@ html {
   color: #801525;
   font-size: 2.5rem;
   letter-spacing: 3.5px;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
 }
 
 .nama-lengkap {
@@ -680,6 +680,45 @@ body.preloader-site {
 
 b.aclaration {
   color: #996E6D;
-  font-size: 0.5rem;
+  font-size: 0.7rem;
   font-weight: bold;
+}
+
+div#date {
+  padding-bottom: 0px;
+}
+
+p#recepcion {
+  font-family: 'AstonScript', sans-serif;
+  color: #801525;
+  font-size: 1.5rem;
+  letter-spacing: 0px;
+  line-height: 3.7rem;
+}
+
+p#ceremonia {
+  font-family: 'AstonScript', sans-serif;
+  color: #801525;
+  font-size: 1.5rem;
+  letter-spacing: 0px;
+  line-height: 3.7rem;
+}
+
+p#price1 {
+  color: #000; 
+  font-family: 'AstonScript', sans-serif;
+  color: #801525;
+  font-size: 1.9rem;
+  font-weight: 900;
+}
+
+p#price2 {
+  color: #000; 
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+p#presentes {
+  font-size: 1rem;
 }
