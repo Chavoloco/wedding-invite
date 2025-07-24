@@ -718,7 +718,7 @@ p#price2 {
 }
 
 p#presentes {
-  font-size: 1.2rem;
+  font-size: 1.rem;
 }
 
 
@@ -728,8 +728,6 @@ p#presentes {
 }
 
 .beach-final {
-  width: 90%;
-  height: 91%;
 }
 
 .beach-final img {
